@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiAT", "RiAT\RiAT.csproj", "{FF3507EB-2E34-48B6-B0DB-82D990BECDBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{E4E22EF7-1A8E-42F9-AC36-742285D6E0CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{DFBA48B4-2D7C-41EA-A540-B5001AF209FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF3507EB-2E34-48B6-B0DB-82D990BECDBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF3507EB-2E34-48B6-B0DB-82D990BECDBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF3507EB-2E34-48B6-B0DB-82D990BECDBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF3507EB-2E34-48B6-B0DB-82D990BECDBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4E22EF7-1A8E-42F9-AC36-742285D6E0CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4E22EF7-1A8E-42F9-AC36-742285D6E0CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4E22EF7-1A8E-42F9-AC36-742285D6E0CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4E22EF7-1A8E-42F9-AC36-742285D6E0CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFBA48B4-2D7C-41EA-A540-B5001AF209FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFBA48B4-2D7C-41EA-A540-B5001AF209FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFBA48B4-2D7C-41EA-A540-B5001AF209FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFBA48B4-2D7C-41EA-A540-B5001AF209FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
