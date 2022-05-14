@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using Entities;
-using Faker;
 
 namespace Services
 {
@@ -25,7 +24,7 @@ namespace Services
             if (employee == null || mark < 1 || mark > 5)
                 return;
 
-            int maxId = _db.Feedback.ToList().Count;
+            int maxId = _db.Feedback.Max(x => x.Id);
             var fb = new Feedback()
             {
                 Id = maxId + 1,
@@ -51,6 +50,20 @@ namespace Services
                 where fb.Id == feedbackId
                 select fb).FirstOrDefault();
 
+        public List<Feedback> FindFeedbacksBySeveralDates(DateTime date1, DateTime date2)
+            => (from fb in _db.Feedback
+                where fb.DateAndTime.Date >= date1.Date && 
+                      fb.DateAndTime.Date <= date2.Date
+                orderby fb.DateAndTime
+                select new Feedback
+                {
+                    Id = fb.Id,
+                    DateAndTime = fb.DateAndTime,
+                    Employee = fb.Employee,
+                    Comment = fb.Comment,
+                    Mark = fb.Mark
+                }).ToList();
+        
         public List<Feedback> FindFeedbacksByDate(DateTime date)
             => (from fb in _db.Feedback
                 where fb.DateAndTime.Date == date.Date
